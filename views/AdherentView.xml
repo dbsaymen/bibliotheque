@@ -1,0 +1,51 @@
+<odoo>
+    <data>
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="adherent_list_view">
+            <field name="name">Adherent list</field>
+            <field name="model">bibliotheque.adherent</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom"/>
+                    <field name="prenom"/>
+                    <field name="genre"/>
+                    <field name="numTel"/>
+                    <field name="dateInscription"/>
+                    <field name="adresse"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="adherent_form_view">
+            <field name="name">Adherent Form</field>
+            <field name="model">bibliotheque.adherent</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="nom"/>
+                        <field name="prenom"/>
+                        <field name="genre"/>
+                        <field name="numTel"/>
+                        <field name="dateInscription"/>
+                        <field name="adresse"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="adherent_action_window">
+          <field name="name">Adherent Window</field>
+          <field name="res_model">bibliotheque.adherent</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Top menu item -->
+        <menuitem name="Bibliotheque" id="bibliotheque.menu_root"/>
+        <!-- menu categories -->
+        <menuitem name="Adherent" id="bibliotheque_adherent_cat" parent="bibliotheque.menu_root"/>
+        <!-- actions -->
+        <menuitem name="Liste des Adherent" id="bibliotheque_adherent_list" parent="bibliotheque_adherent_cat"
+                  action="adherent_action_window"/>
+
+    </data>
+</odoo>
