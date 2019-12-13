@@ -26,6 +26,9 @@
     'data': [
         'security/ir.model.access.csv',
         'views/AdherentView.xml',
+        'views/LivreView.xml',
+        'views/EmpruntView.xml',
+        'views/AuteurView.xml'
     ],
     # only loaded in demonstration mode
     'demo': [
