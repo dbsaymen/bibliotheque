@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="LivreView">
+            <field name="name">Livre list</field>
+            <field name="model">bibliotheque.Livre</field>
+            <field name="arch" type="xml">
+            <tree>
+                <field name="titre"/>
+                <field name="ISBN"/>
+                <field name="numLivres"/>
+                <field name="numLivresDisponibles"/>
+            </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
