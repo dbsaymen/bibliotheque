@@ -1,6 +1,6 @@
 <odoo>
     <data>
-         <record model="ir.ui.view" id="AuteurView">
+         <record model="ir.ui.view" id="auteur_list_view">
             <field name="name">Auteur list</field>
             <field name="model">bibliotheque.auteur</field>
             <field name="arch" type="xml">
@@ -10,7 +10,7 @@
                 </tree>
             </field>
         </record>
-        <record model="ir.ui.view" id="AuteurView">
+        <record model="ir.ui.view" id="auteur_form_view">
             <field name="name">Auteur list</field>
             <field name="model">bibliotheque.auteur</field>
             <field name="arch" type="xml">
@@ -23,7 +23,7 @@
             </field>
         </record>
         <!-- actions opening views on models -->
-        <record model="ir.actions.act_window" id="Auteur_action_window">
+        <record model="ir.actions.act_window" id="auteur_action_window">
           <field name="name">Auteur Window</field>
           <field name="res_model">bibliotheque.auteur</field>
           <field name="view_mode">tree,form</field>
@@ -32,9 +32,9 @@
         <!-- Top menu item -->
         <menuitem name="Bibliotheque" id="bibliotheque.menu_root"/>
         <!-- menu categories -->
-        <menuitem name="Auteurs" id="bibliotheque_Auteur_cat" parent="bibliotheque.menu_root"/>
+        <menuitem name="Auteurs" id="bibliotheque_auteur_cat" parent="bibliotheque.menu_root"/>
         <!-- actions -->
-        <menuitem name="Liste des Auteurs" id="bibliotheque_Auteur_list" parent="bibliotheque_Auteur_cat"
-                  action="Auteur_action_window"/>
+        <menuitem name="Liste des Auteurs" id="bibliotheque_auteur_list" parent="bibliotheque_auteur_cat"
+                  action="auteur_action_window"/>
     </data>
 </odoo>

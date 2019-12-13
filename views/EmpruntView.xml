@@ -1,6 +1,6 @@
 <odoo>
     <data>
-         <record model="ir.ui.view" id="EmpruntView">
+         <record model="ir.ui.view" id="emprunt_list_view">
             <field name="name">Emprunt list</field>
             <field name="model">bibliotheque.emprunt</field>
             <field name="arch" type="xml">
@@ -10,7 +10,7 @@
                 </tree>
             </field>
         </record>
-        <record model="ir.ui.view" id="EmpruntView">
+        <record model="ir.ui.view" id="emprunt_form_view">
             <field name="name">Emprunt list</field>
             <field name="model">bibliotheque.emprunt</field>
             <field name="arch" type="xml">
@@ -23,7 +23,7 @@
             </field>
         </record>
         <!-- actions opening views on models -->
-        <record model="ir.actions.act_window" id="Emprunt_action_window">
+        <record model="ir.actions.act_window" id="emprunt_action_window">
           <field name="name">Emprunt Window</field>
           <field name="res_model">bibliotheque.emprunt</field>
           <field name="view_mode">tree,form</field>
@@ -32,9 +32,9 @@
         <!-- Top menu item -->
         <menuitem name="Bibliotheque" id="bibliotheque.menu_root"/>
         <!-- menu categories -->
-        <menuitem name="Emprunts" id="bibliotheque_Emprunt_cat" parent="bibliotheque.menu_root"/>
+        <menuitem name="Emprunts" id="bibliotheque_emprunt_cat" parent="bibliotheque.menu_root"/>
         <!-- actions -->
-        <menuitem name="Liste des Emprunts" id="bibliotheque_Emprunt_list" parent="bibliotheque_Emprunt_cat"
-                  action="Emprunt_action_window"/>
+        <menuitem name="Liste des Emprunts" id="bibliotheque_emprunt_list" parent="bibliotheque_emprunt_cat"
+                  action="emprunt_action_window"/>
     </data>
 </odoo>

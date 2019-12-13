@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <record model="ir.ui.view" id="LivreView">
+        <record model="ir.ui.view" id="livre_list_view">
             <field name="name">Livre list</field>
             <field name="model">bibliotheque.livre</field>
             <field name="arch" type="xml">
@@ -12,7 +12,7 @@
                 </tree>
             </field>
         </record>
-        <record model="ir.ui.view" id="LivreView">
+        <record model="ir.ui.view" id="livre_form_view">
             <field name="name">Livre list</field>
             <field name="model">bibliotheque.livre</field>
             <field name="arch" type="xml">
@@ -27,7 +27,7 @@
             </field>
         </record>
          <!-- actions opening views on models -->
-        <record model="ir.actions.act_window" id="Livre_action_window">
+        <record model="ir.actions.act_window" id="livre_action_window">
           <field name="name">Adherent Window</field>
           <field name="res_model">bibliotheque.livre</field>
           <field name="view_mode">tree,form</field>
@@ -36,9 +36,9 @@
         <!-- Top menu item -->
         <menuitem name="Bibliotheque" id="bibliotheque.menu_root"/>
         <!-- menu categories -->
-        <menuitem name="Livres" id="bibliotheque_Livre_cat" parent="bibliotheque.menu_root"/>
+        <menuitem name="Livres" id="bibliotheque_livre_cat" parent="bibliotheque.menu_root"/>
         <!-- actions -->
-        <menuitem name="Liste des Livres" id="bibliotheque_Livre_list" parent="bibliotheque_Livre_cat"
-                  action="Livre_action_window"/>
+        <menuitem name="Liste des Livres" id="bibliotheque_livre_list" parent="bibliotheque_livre_cat"
+                  action="livre_action_window"/>
     </data>
 </odoo>
