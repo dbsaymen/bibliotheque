@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+         <record model="ir.ui.view" id="AuteurView">
+            <field name="name">Auteur list</field>
+            <field name="model">bibliotheque.auteur</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="f_name"/>
+                    <field name="f_prenom"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="AuteurView">
+            <field name="name">Auteur list</field>
+            <field name="model">bibliotheque.auteur</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="f_name"/>
+                        <field name="f_prenom"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="Auteur_action_window">
+          <field name="name">Auteur Window</field>
+          <field name="res_model">bibliotheque.auteur</field>
+          <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Top menu item -->
+        <menuitem name="Bibliotheque" id="bibliotheque.menu_root"/>
+        <!-- menu categories -->
+        <menuitem name="Auteurs" id="bibliotheque_Auteur_cat" parent="bibliotheque.menu_root"/>
+        <!-- actions -->
+        <menuitem name="Liste des Auteurs" id="bibliotheque_Auteur_list" parent="bibliotheque_Auteur_cat"
+                  action="Auteur_action_window"/>
+    </data>
+</odoo>

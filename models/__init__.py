@@ -3,3 +3,5 @@
 
 from . import Auteur
 from . import Adherent
+from . import Livre
+from . import Emprunt

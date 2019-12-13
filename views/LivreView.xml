@@ -39,6 +39,6 @@
         <menuitem name="Livres" id="bibliotheque_Livre_cat" parent="bibliotheque.menu_root"/>
         <!-- actions -->
         <menuitem name="Liste des Livres" id="bibliotheque_Livre_list" parent="bibliotheque_Livre_cat"
-                  action="adherent_action_window"/>
+                  action="Livre_action_window"/>
     </data>
 </odoo>
