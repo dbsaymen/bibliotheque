@@ -2,7 +2,7 @@
     <data>
         <record model="ir.ui.view" id="LivreView">
             <field name="name">Livre list</field>
-            <field name="model">bibliotheque.Livre</field>
+            <field name="model">bibliotheque.livre</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="titre"/>
@@ -14,7 +14,7 @@
         </record>
         <record model="ir.ui.view" id="LivreView">
             <field name="name">Livre list</field>
-            <field name="model">bibliotheque.Livre</field>
+            <field name="model">bibliotheque.livre</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
@@ -29,7 +29,7 @@
          <!-- actions opening views on models -->
         <record model="ir.actions.act_window" id="Livre_action_window">
           <field name="name">Adherent Window</field>
-          <field name="res_model">bibliotheque.Livre</field>
+          <field name="res_model">bibliotheque.livre</field>
           <field name="view_mode">tree,form</field>
         </record>
 

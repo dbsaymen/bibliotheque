@@ -2,7 +2,7 @@
     <data>
          <record model="ir.ui.view" id="EmpruntView">
             <field name="name">Emprunt list</field>
-            <field name="model">bibliotheque.auteur</field>
+            <field name="model">bibliotheque.emprunt</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="dateRetour"/>
@@ -12,7 +12,7 @@
         </record>
         <record model="ir.ui.view" id="EmpruntView">
             <field name="name">Emprunt list</field>
-            <field name="model">bibliotheque.auteur</field>
+            <field name="model">bibliotheque.emprunt</field>
             <field name="arch" type="xml">
                 <form>
                     <group>
@@ -25,7 +25,7 @@
         <!-- actions opening views on models -->
         <record model="ir.actions.act_window" id="Emprunt_action_window">
           <field name="name">Emprunt Window</field>
-          <field name="res_model">bibliotheque.auteur</field>
+          <field name="res_model">bibliotheque.emprunt</field>
           <field name="view_mode">tree,form</field>
         </record>
 
