@@ -29,7 +29,7 @@
                         <field name="adresse"/>
                     </group>
                     <notebook>
-                        <page String="liste des Emprunts">
+                        <page string="liste des Emprunts">
                             <field name="empruntIds"/>
                         </page>
                     </notebook>
