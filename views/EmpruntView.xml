@@ -6,7 +6,7 @@
             <field name="arch" type="xml">
                 <tree>
                     <field name="dateEmprunt"/>
-                    <field name="dateRetour"/>
+                    <field name="type_empr"/>
                     <field name="adherentId"/>
                     <field name="livreId"/>
                 </tree>
@@ -19,7 +19,7 @@
                 <form>
                     <group>
                         <field name="dateEmprunt"/>
-                         <field name="dateRetour"/>
+                        <field name="type_empr"/>
                         <field name="adherentId"/>
                         <field name="livreId"/>
                     </group>
