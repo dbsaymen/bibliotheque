@@ -12,7 +12,7 @@ class Livre (models.Model):
     def name_get(self):
         result=[]
         for livre in self:
-            name="["+Livre.auteurId.f_name+"]"+livre.titre
+            name=livre.titre
             result.append((livre.id,name))
         return result
 

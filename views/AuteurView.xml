@@ -19,6 +19,11 @@
                         <field name="f_name"/>
                         <field name="f_prenom"/>
                     </group>
+                    <notebook>
+                        <page string="liste des Livres">
+                            <field name="livreId"/>
+                        </page>
+                    </notebook>
                 </form>
             </field>
         </record>
