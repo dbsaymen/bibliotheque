@@ -1,12 +1,14 @@
 <odoo>
     <data>
-         <record model="ir.ui.view" id="emprunt_list_view">
+        <record model="ir.ui.view" id="emprunt_list_view">
             <field name="name">Emprunt list</field>
             <field name="model">bibliotheque.emprunt</field>
             <field name="arch" type="xml">
                 <tree>
                     <field name="dateRetour"/>
                     <field name="dateEmprunt"/>
+                    <field name="adherentId"/>
+                    <field name="livreId"/>
                 </tree>
             </field>
         </record>
@@ -18,15 +20,17 @@
                     <group>
                         <field name="dateRetour"/>
                         <field name="dateEmprunt"/>
+                        <field name="adherentId"/>
+                        <field name="livreId"/>
                     </group>
                 </form>
             </field>
         </record>
         <!-- actions opening views on models -->
         <record model="ir.actions.act_window" id="emprunt_action_window">
-          <field name="name">Emprunt Window</field>
-          <field name="res_model">bibliotheque.emprunt</field>
-          <field name="view_mode">tree,form</field>
+            <field name="name">Emprunt Window</field>
+            <field name="res_model">bibliotheque.emprunt</field>
+            <field name="view_mode">tree,form</field>
         </record>
 
         <!-- Top menu item -->
